@@ -1,10 +1,14 @@
 const { render } = require("react-dom");
+import Nav from "./Nav";
+import Intro from "./Intro";
 
 const App = () =>{
     return(
         <div>
-            <h1>Mafkoora site</h1>
+            <Nav />
+        <Intro />
         </div>
+        
     );
 }
 
