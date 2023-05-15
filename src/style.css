@@ -21,6 +21,7 @@ nav {
   font-size: 80%;
   font-family: var(--mono);
   padding: 4rem 8rem;
+  
 }
 
 nav a:hover {
@@ -54,6 +55,7 @@ nav li:first-child {
   flex-basis: 100%;
   text-align: center;
   font-size: 150%;
+  
 }
 
 nav li:last-child {
@@ -62,7 +64,7 @@ nav li:last-child {
 
 .intro {
   flex-direction: column;
-  padding: 4rem 0 4rem 8rem;
+  padding: 2rem 0 4rem 8rem;
   margin: 0 auto;
 }
 .intro p {
@@ -82,10 +84,49 @@ nav li:last-child {
 
 }
 
-/* .intro p, .intro img {
+.section {
+  flex-direction: column;
+  padding: 2rem 0 4rem 8rem;
+  margin: 0 auto;
+}
+.section p {
+  display: flex;
+  font-size: 1rem;
+  max-width: 350px;
+  display: inline-block;
+  float: left;
+  margin-top: 50px;
+  
+}
+
+.section img {
+  width: 70%;
+  height: 70%;
+  margin-top: 20px;
+
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 3rem;
+  
+}
+ footer ul{
+  list-style-type: none;
   display: flex;
   flex-flow: row wrap;
-} */
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+  padding: ;
+  margin: 2rem 0;
+}
+
+footer h2 {
+  font-family: var(--mono);
+}
 
 
 
@@ -94,17 +135,34 @@ nav li:last-child {
   nav {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem;
   }
-  .intro {
+  .sec {
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 4rem;
     padding-right: 0;
   }
   .intro img {
-    width: 65%;
-    height: 65%;
+    width: 53%;
+    height: 53%;
+  }
+
+  .section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 4rem;
+    padding-right: 0; 
+    padding-bottom: 6rem;
+  }
+  .section img {
+    width: 50%;
+    height: 50%;
+    margin-left: 25px;
+  }
+  
+  .section p {
+    background-color: var(--blue);
+    padding: 15px;
   }
   
   nav li:first-child {
@@ -114,17 +172,41 @@ nav li:last-child {
   }
 }
 
+.pink {
+  background-color: var(--lite-brown);
+  color: white
+}
+.yellow {
+  
+  background-color: var(--lite-yellow);
+  color: white;
+}
+.grey {
+  background-color: var(--brown);
+  color: var(--white);
+}
 
-@media(min-width: 320px){
+@media(max-width: 850px){
   .intro {
-    max-width: 767px;
-    padding: 0 1rem 0 1rem;
+    padding: 0 4rem 0 4rem;
     margin: 0;
   }
   
   .intro img {
-    max-width: 767px;
     width: 100%;
     height: 100%;
+  }
+}
+
+@media(max-width: 450px){
+  nav {
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  .intro {
+    padding: 2rem 1rem 0 1rem;
+  }
+  .section {
+    padding: 2rem 1rem 0 1rem;
   }
 }
