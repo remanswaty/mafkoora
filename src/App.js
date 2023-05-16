@@ -20,7 +20,7 @@ const App = () =>{
                 image={MukalimaLogo}
                 id="mukaalima"
             />
-            <br />
+            {/* <br /> */}
             <PageSection 
                 bgColor="yellow"
                 title="RANABAN"
@@ -28,7 +28,7 @@ const App = () =>{
                 image={RanabanLogo}
                 id="ranaban"
             />
-            <br />
+            {/* <br /> */}
             <PageSection 
                 bgColor="grey"
                 title="GATHA"
@@ -36,7 +36,7 @@ const App = () =>{
                 image={GathaLogo}
                 id="gatha"
             />
-            <br />
+            {/* <br /> */}
             <Footer />
         </div>
         
