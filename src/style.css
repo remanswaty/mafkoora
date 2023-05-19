@@ -32,9 +32,6 @@ h1,h2,h3 {
 .section .section-right .slider-container img {
   width: 80%;
 }
-.slider-container img:hover {
-
-}
 
 .slider-container button {
   background: none;
@@ -74,6 +71,11 @@ body {
   color: var(--white);
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
 a {
   text-decoration: none;
   color: yellow;
@@ -106,9 +108,9 @@ nav li:last-child {
   margin-top: 50px;
 }
 
-.intro img {
-  max-width: 100%;
+.intro .intro-image-container img {
   margin-top: 20px;
+  margin-left: 10px;
 }
 
 .section {
@@ -263,6 +265,9 @@ footer h2 {
     margin: 0;
     flex-wrap: wrap;
   }
+  .intro .intro-image-container img{
+    margin-left: 0;
+  }
   
   .section .section-right{
     width: 100%;
@@ -276,6 +281,4 @@ footer h2 {
   footer ul {
     gap: 1rem;
   }
-  }
 }
-

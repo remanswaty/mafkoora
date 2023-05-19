@@ -33,7 +33,7 @@ const App = () =>{
     const mukaalimaImages = [mukaalima1, mukaalima2, mukaalima3, mukaalima4, mukaalima5, mukaalima6];
     const gathaImages = [gatha1, gatha2, gatha3, gatha4, gatha5, gatha6];
     return(
-        <div>
+        <div className="app">
             <Nav />
             <Intro />
             <PageSection
