@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import LazyLoad from 'react-lazy-load';
-import placeholderImage from '../public/img/placeholder-image.jpg';
+// import placeholderImage from '../public/img/placeholder-image.jpg';
 
 const ImageSlider = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -24,7 +24,9 @@ const ImageSlider = ({ images }) => {
   return (
     <div className="slider-container">
       <button onClick={handleSwipeLeft}><ArrowBackIosIcon fontSize='large' /></button>
-        <LazyLoad offset={200} debounce={false} once={true}>
+        <LazyLoad
+          style={{ width: '100%', height: '100%'}}
+          offset={200} debounce={false} once={true}>
           <img src={images[currentImageIndex]} alt="Slider Image" />
         </LazyLoad>
       <button onClick={handleSwipeRight}><ArrowForwardIosIcon fontSize='large' /></button>

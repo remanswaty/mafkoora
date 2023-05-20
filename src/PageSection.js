@@ -1,6 +1,6 @@
 import ImageSlider from "./ImageSlider";
 import LazyLoad from 'react-lazy-load';
-import placeholderImage from '../public/img/placeholder-image.jpg';
+// import placeholderImage from '../public/img/placeholder-image.jpg';
 const PageSection = ({ title, description, image, id, images }) => {
     return (
         <div>
@@ -8,11 +8,9 @@ const PageSection = ({ title, description, image, id, images }) => {
                 <div className="section-left">
                     <h2>{title}</h2>
                     <p>{description}</p>
-                    <div style={{placeholderImage: placeholderImage}}>
-                        <LazyLoad offset={200} debounce={false} once={true}>
+                    <LazyLoad className="lazy-load-placeholder" offset={200} debounce={false} once={true}>
                         <img src={image}></img>
                     </LazyLoad>
-                    </div>
                 </div>
                 <div className="section-right">
                     <ImageSlider images={images} />

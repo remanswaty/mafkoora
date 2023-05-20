@@ -36,6 +36,7 @@ const App = () =>{
         <div className="app">
             <Nav />
             <Intro />
+            <div className="gradient"/>
             <PageSection
                 title="MUKAALIMA"
                 description="Mafkoora commenced its first bimonthly debate/ colloquium, Muakaalima at Mafkoora on November 19, 2020. Held on every second Thursday of a month, Mukaalima provides an intellectual delight for the young scholars to interact with great minds, maestros, and compassionate hearts of diverse schools. Appreciated largely in the academic circles, Mukaalima offers a most inspiring arena for scholastic and argumentative dialogues.
@@ -44,7 +45,7 @@ const App = () =>{
                 id="mukaalima"
                 images={mukaalimaImages}
             />
-            
+            <div className="gradient"/>
             <PageSection 
                 title="RANABAN"
                 description="Launched in March 2022, Ranaban a Pashto Monthly for the children, for the promotion of Pashto language and literature. The magazine aims at educating the youth on the Pashto orthography, orthoepy, lexicology, and counting, as well as the knowledge of Pashtun history, geography and indigenous wisdom."
